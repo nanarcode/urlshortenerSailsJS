@@ -4,8 +4,21 @@
  */
 
 module.exports = {
-    redirect : function(req,res){
+    redirectToIndex : function(req,res){
         res.redirect('/');
+    },
+
+    redirect: function(req,res){
+        console.log('ok');
+      var short = req.param('short');
+        Url.find({shortUrl : short}).exec(function find(err,found){
+           if(err){
+               res.redirect('/');
+           }else{
+               console.log(found);
+               res.redirect(found[0].longUrl);
+           }
+        });
     },
 
 	create: function(req,res){

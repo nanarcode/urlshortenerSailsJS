@@ -19,18 +19,30 @@
     </div>
 
 
-        <div class="col-lg-12 text-center v-center">
     <%
 
     if(typeof error != 'undefined'){
-        %><p class="lead"><%= error %></p><%
+        %>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+            <p class="lead"><%= error %></p>
+                </div>
+
+            </div
+
+            <%
     }if(typeof created != 'undefined' && created == true){
                 var link = hostname+'/'+shortUrl;
-        %><p class="lead"><a href="<%= link %>"><%= link %></a> </p><%
+        %>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                    <p class="lead"><a href="<%= link %>"><%= link %></a> </p>
+                        </div>
+
+                    </div>
+                    <%
         }
      %>
-            </div>
-
 
     <div class="row">
         <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
