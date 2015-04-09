@@ -1,0 +1,40 @@
+{
+  "data": {
+    "url": [
+      {
+        "longUrl": "http://www.google.fr",
+        "shortUrl": "XKk2vh",
+        "createdAt": "2015-04-09T18:37:14.464Z",
+        "updatedAt": "2015-04-09T18:37:14.464Z",
+        "id": 18
+      }
+    ]
+  },
+  "schema": {
+    "url": {
+      "longUrl": {
+        "type": "string"
+      },
+      "shortUrl": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "url": {
+      "id": 18
+    }
+  }
+}

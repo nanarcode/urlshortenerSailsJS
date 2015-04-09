@@ -34,7 +34,9 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+    'post /urls': 'UrlController.create',
+    'get /urls': 'UrlController.redirect'
 
   /***************************************************************************
   *                                                                          *
