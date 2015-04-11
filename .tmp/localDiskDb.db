@@ -1,14 +1,6 @@
 {
   "data": {
-    "url": [
-      {
-        "longUrl": "http://www.google.fr",
-        "shortUrl": "KdW5Wr",
-        "createdAt": "2015-04-09T19:49:19.524Z",
-        "updatedAt": "2015-04-09T19:49:19.524Z",
-        "id": 27
-      }
-    ]
+    "url": []
   },
   "schema": {
     "url": {
@@ -34,7 +26,7 @@
   },
   "counters": {
     "url": {
-      "id": 27
+      "id": 30
     }
   }
 }

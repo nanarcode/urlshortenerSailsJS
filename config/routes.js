@@ -35,9 +35,19 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
+    '/ugly':{
+        view : 'homepage',
+      locals:{
+          layout : 'layout_ugly'
+      }
+
+    },
+    '/dashboard':{
+      view:'dashboard'
+    },
     'post /urls': 'UrlController.create',
     'get /urls': 'UrlController.redirectToIndex',
-    'get /:short':'UrlController.redirect'
+    'get /redirect/:short':'UrlController.redirect'
 
   /***************************************************************************
   *                                                                          *
