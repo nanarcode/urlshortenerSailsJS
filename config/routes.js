@@ -47,7 +47,9 @@ module.exports.routes = {
     },
     'post /urls': 'UrlController.create',
     'get /urls': 'UrlController.redirectToIndex',
-    'get /redirect/:short':'UrlController.redirect'
+    'get /redirect/:short':'UrlController.redirect',
+    '/login':'AuthController.login',
+    '/logout':'AuthController.logout'
 
   /***************************************************************************
   *                                                                          *

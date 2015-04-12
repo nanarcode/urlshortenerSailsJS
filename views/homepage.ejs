@@ -3,11 +3,11 @@
     window.history.pushState('','','/');
 </script>
 
-<div class="container-full">
+
     <div class="row">
         <div class="col-lg-12 text-center v-center">
         <h1>NanarCode url Shortener</h1>
-        <p class="lead">Une exemple concret pour commencer à utliser SailsJS</p>
+        <p class="lead">Un exemple concret pour commencer à utliser SailsJS</p>
 
 
         <form class="col-lg-12" method="POST" action="/urls">
@@ -18,19 +18,14 @@
         </form>
         </div>
     </div>
-
-
     <%
-
     if(typeof error != 'undefined'){
         %>
             <div class="row">
                 <div class="col-lg-12 text-center">
             <p class="lead"><%= error %></p>
                 </div>
-
             </div
-
             <%
     }if(typeof created != 'undefined' && created == true){
                 var link = hostname+'/redirect/'+shortUrl;
@@ -47,12 +42,8 @@
 
     <div class="row">
         <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
-            <a href="http://www.nanarcode.fr"><i class="icon-google-plus"></i></a>
-            <a href="#"><i class="icon-facebook"></i></a>
-            <a href="#"><i class="icon-twitter"></i></a>
-            <a href="#"><i class="icon-github"></i></a>
+            <a href="https://www.facebook.com/nanarcode"><i class="icon-facebook"></i></a>
+            <a href="https://twitter.com/nanarcode"><i class="icon-twitter"></i></a>
+            <a href="https://github.com/nanarcode"><i class="icon-github"></i></a>
         </div>
     </div>
-
-
-</div>

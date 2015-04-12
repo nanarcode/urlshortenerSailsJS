@@ -4,12 +4,25 @@
 module.exports = {
     attributes:{
         longUrl:{
-            type : 'string',
+            type : 'url',
             required : true
         },
         shortUrl:{
             type : 'string'
+        },
+        clicks:{
+            type : 'integer',
+            defaultsTo : 0
         }
+    },
+
+    //npm install --save sails-hook-validation
+    //permet de créer des messages d'erreur personnalisés
+    validationMessages:{
+      longUrl:{
+          url : "L'url n'est pas valide.",
+          required : "Vous devez indiquer une url."
+      }
     },
 
     afterValidate : function (values, cb){
