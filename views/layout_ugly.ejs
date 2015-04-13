@@ -7,13 +7,35 @@
     <link rel="stylesheet" href="/styles/styles_ugly.css">
 </head>
 
+<body>
 <div class="container-full">
-    <%- body %>
     <div class="row">
-        <div class="col-lg-12 text-center" >
-            <a href="/login"><button>Se connecter</button></a>
-            <a href="/register"><button>S'enregistrer</button></a>
-        </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Accueil</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <%
+                        if(typeof username != 'undefined'){
+                        %>
+                        <li><a href="/dashboard"><%= username %></a></li>
+                        <%
+                        }else{
+                        %>
+                        <li><a href="/register">S'enregistrer</a></li>
+                        <li><a href="/login">Se connecter</a></li>
+                        <%
+                        }
+                        %>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
     </div>
+    <%- body %>
+
 </div>
+</body>
 </html>

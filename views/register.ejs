@@ -3,16 +3,47 @@
         <div class="col-lg-12 text-center v-center">
             <h1>NanarCode url Shortener</h1>
             <p class="lead">Un exemple concret pour commencer à utliser SailsJS</p>
+            <p>
+            <%
+             if(typeof error != 'undefined'){
+                 %><%= error %><%
+             }
+              %>
+            </p>
+            <%
+             if(typeof message != 'undefined'){
+                 %><%= message %><%
+             }
+              %>
+            </div>
 
+        <div class="row">
+            <form class="form-horizontal" action="/register" method="post">
+                <div class="form-group" style="width:340px;text-align:center;margin:0 auto;">
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                    </div>
+                </div>
+                <div class="form-group" style="width:340px;text-align:center;margin:0 auto;">
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe">
+                    </div>
+                </div>
 
-            <form class="col-lg-12" method="POST" action="/register">
-                <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
-                    <input class="form-control input-lg" placeholder="Pseudo" type="text" id="username" name="username">
-                    <input class="form-control input-lg" placeholder="Mot de passe" type="password" id="password" name="password">
-                    <input class="form-control input-lg" placeholder="Mot de passe" type="password" id="password_confirmation" name="password_confirmation">
-                    <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="submit" id="connect">S'enregistrer</button></span>
+                <div class="form-group" style="width:340px;text-align:center;margin:0 auto;">
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Confirmation">
+                    </div>
+                </div>
+
+                <div class="form-group" style="width:340px;text-align:center;margin:0 auto;padding-top: 5px;">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-default">S'enregistrer</button>
+                    </div>
                 </div>
             </form>
+
+
         </div>
     </div>
 

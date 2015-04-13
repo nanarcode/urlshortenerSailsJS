@@ -2,8 +2,7 @@
   "name": "urlShortenerSailsJs",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
-  "keywords": [],
+  "description": "URLShortener pour apprendre Sails.js. http://www.nanarcode.fr",
   "dependencies": {
     "bcrypt": "^0.8.2",
     "ejs": "~0.8.4",
@@ -34,10 +33,6 @@
     "debug": "node debug app.js"
   },
   "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/damien/urlShortenerSailsJs.git"
-  },
   "author": "NanarCode",
   "license": ""
 }

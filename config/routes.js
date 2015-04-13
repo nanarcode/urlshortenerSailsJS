@@ -45,10 +45,17 @@ module.exports.routes = {
     '/dashboard':{
       view:'dashboard'
     },
+    '/login':{
+      view : 'login'
+    },
+    '/register':{
+      view: 'register'
+    },
     'post /urls': 'UrlController.create',
     'get /urls': 'UrlController.redirectToIndex',
     'get /redirect/:short':'UrlController.redirect',
-    '/login':'AuthController.login',
+    'post /login':'AuthController.login',
+    'post /register' : 'AuthController.register',
     '/logout':'AuthController.logout'
 
   /***************************************************************************

@@ -11,6 +11,10 @@
       "shortUrl": {
         "type": "string"
       },
+      "clicks": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
       "id": {
         "type": "integer",
         "autoIncrement": true,
